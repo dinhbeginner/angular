@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+  ===================================lab9================================
+
+
+  <div class="container">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-home  bg-primary">
+      <a class="navbar-brand" href="#"><img src="../assets/images/img1.png" width="60%" height="60px" alt="">PORTO</a>
+      <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+        aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse p-5" id="collapsibleNavId">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0 p-5">
+          <li class="nav-item active">
+            <a class="nav-link" href="#" routerLink=""><i class="fa fa-home">Home</i> <span
+                class="sr-only">(current)</span></a>
+          </li>
+          <ng-container *ngIf="!isAdmin()">
+            <li class="nav-item active">
+              <a class="nav-link" href="#" routerLink=""><i class="fa fa-bullhorn">Thông Báo</i> <span
+                  class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#" routerLink=""><i class="fa fa-phone">Liên Hệ</i> <span
+                  class="sr-only">(current)</span></a>
+            </li>
+          </ng-container>
+          <ng-container *ngIf="isAdmin()">
+            <li class="nav-item active">
+              <a class="nav-link" href="#" routerLink="/productlist">ProductList <span
+                  class="sr-only">(current)</span></a>
+            </li>
+          </ng-container>
+
+
+        </ul>
+        <ul class="navbar-nav float-right">
+          <ng-container *ngIf="isAuthenticated() || !isAdmin()">
+            <li class="nav-item active">
+              <a class="nav-link" href="#" routerLink="/mycart"><i class="fa fa-cart-plus"> MyCart</i> <span
+                  class="sr-only">(current)</span></a>
+            </li>
+          </ng-container>
+          <ng-container *ngIf="!isAuthenticated() && !isAdmin()">
+            <li class="nav-item active">
+              <a class="nav-link" href="#" routerLink="/login"><i class="fa fa-lock"> Login</i> <span
+                  class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#" routerLink="/register">Register <span class="sr-only">(current)</span></a>
+            </li>
+          </ng-container>
+          <ng-container *ngIf="isAdmin()">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Hello ADMIN <span class="sr-only">(current)</span></a>
+            </li>
+          </ng-container>
+          <ng-container *ngIf="isAuthenticated() || isAdmin()">
+            <li class="nav-item active">
+              <a class="nav-link" href="#" (click)="logout()" [routerLink]="['']">
+                <i class="fa fa-sign-out">Logout</i> <span class="sr-only">(current)</span>
+              </a>
+            </li>
+          </ng-container>
+
+        </ul>
+
+      </div>
+
+    </nav>
+  </div>
+
+  <router-outlet></router-outlet>
+
+
+
+  <div class="alert alert-dark bg-info text-light  " role="alert" style="margin-top:100px;">
+    <div class="row text-center">
+      <div class="col-sm-6 col-lg-3 pt-5  ">
+        <h3 class="">Shop bán hàng online</h3>
+        <a class="nhanhieu" href="">
+          <div class="fooder">PORTO
+          </div>
+        </a>
+        <p></p>
+        <h4 style="text-decoration: underline;">
+          Nền Tảng Cho Sự Thăng Hoa</h4>
+
+      </div>
+      <div class="col-sm-6 col-lg-3">
+        <h4>THÔNG TIN</h4>
+        <h6 class="pt-4">Địa chỉ: 70 đường số 3,
+          cư xá lữ da, Quận 11,TP.HCM</h6>
+        <h6>SDT: 0908174222 - 0809335412</h6>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.498562651522!2d106.65205687490777!3d10.773075089375496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ec0f16d67a5%3A0x577e4b714b74db4b!2zNzAgU-G7kSAzIEPGsCBYw6EgTOG7ryBHaWEsIFBoxrDhu51uZyAxNSwgUXXhuq1uIDExLCBUaMOgbmggcGjhu5EgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1687684350998!5m2!1svi!2s"
+          height="150" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+      </div>
+      <div class="col-sm-6 col-lg-3 mb-5" style="margin-top:-48px">
+
+        <h5 style="color:aliceblue">HỖ TRỢ KHÁCH HÀNG</h5>
+
+        <h6 class="pt-3"><a href="" class="hotrokh">Chính sách
+            thanh toán</a></h6>
+        <h6 class="pt-3"><a href="" class="hotrokh">Chính sách
+            bảo hành</a></h6>
+        <h6 class="pt-3"><a href="" class="hotrokh">Chính sách
+            đổi trả hàng</a></h6>
+        <h6 class="pt-3"><a href="" class="hotrokh">Chính sách
+            vận chuyển</a></h6>
+        <h6 class="pt-3"><a href="" class="hotrokh">Chính sách
+            bảo mật</a></h6>
+
+
+
+      </div>
+      <div class="col-sm-6 col-lg-3" style="margin-top:-48px">
+        <h5 style="color:aliceblue">THEO DÕI CHÚNG TÔI TRÊN</h5>
+        <p class=""></p>
+        <p></p>
+        <p></p>
+
+        <div class="row pt-4  facebook">
+
+          <a href="http://facebook.com" class="face">
+            <li class="li"><span class="fa fa-facebook pl-2"><span class="pl-4 ">Facebook</span></span>
+            </li>
+          </a><br>
+
+
+        </div>
+        <div class="row"> <br></div>
+        <div class="row pt-4  twit">
+
+          <a href="http://twiter.com" class="twiet">
+            <li class="li"><span class="fa fa-telegram pl-1"><span class="pl-4 ">Twitter</span>
+              </span>
+            </li>
+          </a><br>
+        </div>
+        <div class="row"> <br></div>
+        <div class="row pt-4 linkedin ">
+          <A href="http://youtuber.com" class="linke">
+            <li class="li"><span class="fa fa-youtube pl-1"><span class="pl-4 ">Youttube</span></span>
+            </li>
+          </A><br>
+        </div>
+        <div class="row"> <br></div>
+        <div class=" row pt-4 google ">
+          <a href="http://google.com" class="gogle">
+            <li class="li "><span class="fa fa-google-plus pl-1"><span class="pl-4 ">Google</span></span>
+            </li>
+          </a><br>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+  <!-- <app-bai3></app-bai3> -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

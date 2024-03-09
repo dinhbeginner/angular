@@ -1,0 +1,268 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+        .wrapper {
+            text-align: center;
+        }
+        .wrapper input {
+            padding: 10px;
+            background-color: #0d1019;
+            border: 2px solid #fcc23f;
+            border-radius: 5px;
+            width: 300px;
+            color: #eee;
+            font-size: 12px;
+            transition: all 0.2s ease;
+        }
+        .wrapper label {
+            position: absolute;
+            left: 200px;
+            top: 70px;
+            border-radius: 20px;
+            padding: 0 4px;
+            color: #fcc23f;
+            background-color: #0d1019;
+            transition: all 0.2s ease;
+            pointer-events: none;
+        }
+        input:not(:placeholder-shown)~label,
+        input:focus~label {
+            top: 60px;
+            font-size: 13px;
+        }
+  </style>
+</head>
+<body>
+  <h2 class="text-center text-danger">{{name}}</h2>
+<h3 class="text-center">Kỷ niệm {{namht - nambd}} năm thành lập trường</h3>
+<h2>Bài 3</h2>
+<label for="input"> check to make month readonly: </label>
+<input type="checkbox" (click)="readOnly()" name="" id=""> <br>
+<input type="date" [readOnly]="isReadonly" name="" id="">
+<button type="button" class="btn btn-primary" (click)="readOnly()">Click</button>
+<br> <br>
+<hr>
+<h2>Bài 4</h2>
+<h1 style="color:green">Disabled Directive</h1>
+<button (click)="toggleDisabled()">Click to Disable</button>
+<button [disabled]="isDisabled"(click)="myClick()">Message</button>
+<button [hidden]="isDisabled"(click)="toggleDisabled()">Click to Enable</button>
+<br> <br>
+<hr>
+<h2>Bài 5</h2>
+<div class="row">
+  <div class="col-md-3"></div>
+  <div class="col-md-6">
+    <div class="card">
+      <div class="card-header">
+        Tính Tổng 2 số
+      </div>
+      <div class="card-body">
+        <div class="wrapper">
+          <input type="text" [(ngModel)]="a" name="input" placeholder="">
+          <label for="input"> Số thứ nhất</label>
+          <br> <br> <br>
+          <input type="text" [(ngModel)]="b" name="inputt" placeholder="">
+          <label style="margin-top: 90px;" for="inputt"> Số thứ hai</label>
+          
+      </div>
+      </div>
+      <div class="card-footer text-muted">
+        Kết quả: {{ Sum() }}
+      </div>      
+    </div>
+  </div>
+</div>
+<br><br>
+<hr>
+<h2>Bài 6</h2>
+<div class="row">
+  <div class="col-md-3"></div>
+  <div class="col-md-6">
+    <div class="card">
+      <div class="card-header">
+        Tìm số lớn nhất
+      </div>
+      <div class="card-body">
+        <div class="wrapper">
+          <input type="text" [(ngModel)]="c" name="input" placeholder="">
+          <label for="input"> Số thứ nhất</label>
+          <br> <br> <br>
+          <input type="text" [(ngModel)]="d" name="inputt" placeholder="">
+          <label style="margin-top: 90px;" for="inputt"> Số thứ hai</label>
+          
+      </div>
+      </div>
+      <div class="card-footer text-muted">
+        Số lớn nhất: {{ Max() }}
+      </div>      
+    </div>
+  </div>
+</div>
+<br><br>
+<hr>
+<h2>Bài 7</h2>
+<div class="row">
+  <div class="col-md-3"></div>
+  <div class="col-md-6">
+    <div class="card">
+      <div class="card-header">
+        Tìm số lớn nhất
+      </div>
+      <div class="card-body">
+        <div class="wrapper">
+          <input type="text" [(ngModel)]="e" name="input" placeholder="">
+          <label for="input"> Số thứ nhất</label>
+          <br> <br> <br>
+          <input type="text" [(ngModel)]="f" name="inputt" placeholder="">
+          <label style="margin-top: 90px;" for="inputt"> Số thứ hai</label>
+          <br> <br> <br>
+          <input type="text" [(ngModel)]="g" name="inputtt" placeholder="">
+          <label style="margin-top: 180px;" for="inputtt"> Số thứ ba</label>
+      </div>
+      </div>
+      <div class="card-footer text-muted">
+        Số lớn nhất: {{ Maxx() }}
+      </div>      
+    </div>
+  </div>
+</div>
+<br><br>
+<hr>
+<h2>Bài 8</h2>
+<div class="row">
+  <div class="col-md-3"></div>
+  <div class="col-md-6">
+    <div class="card">
+      <div class="card-header">
+        Tăng dần 
+      </div>
+      <div class="card-body">
+        <div class="wrapper">
+          <input type="text" [(ngModel)]="e" name="input" placeholder="">
+          <label for="input"> Số thứ nhất</label>
+          <br> <br> <br>
+          <input type="text" [(ngModel)]="f" name="inputt" placeholder="">
+          <label style="margin-top: 90px;" for="inputt"> Số thứ hai</label>
+          <br> <br> <br>
+          <input type="text" [(ngModel)]="g" name="inputtt" placeholder="">
+          <label style="margin-top: 180px;" for="inputtt"> Số thứ ba</label>
+      </div>
+      </div>
+      <div class="card-footer text-muted">
+        Thứ tự tăng dần: {{ td() }}
+      </div>      
+    </div>
+  </div>
+</div>
+<br><br>
+<hr>
+<h2>Bài 9</h2>
+<div class="row">
+  <div class="col-md-3"></div>
+  <div class="col-md-6">
+    <div class="card">
+      <div class="card-header">
+        Giải phương trình bậc 1
+      </div>
+      <div class="card-body">
+        <div class="wrapper">
+          <input type="text" [(ngModel)]="t" name="input" placeholder="">
+          <label for="input"> Số thứ nhất</label>
+          <br> <br> <br>
+          <input type="text" [(ngModel)]="k" name="inputt" placeholder="">
+          <label style="margin-top: 90px;" for="inputt"> Số thứ hai</label>
+      </div>
+      </div>
+      <div class="card-footer text-muted">
+        Kết quả: {{ ptb1() }}
+      </div>      
+    </div>
+  </div>
+</div>
+<br><br>
+<hr>
+<h2>Bài 10</h2>
+<div class="row">
+  <div class="col-md-3"></div>
+  <div class="col-md-6">
+    <div class="card">
+      <div class="card-header">
+        Giải phương trình bậc 2
+      </div>
+      <div class="card-body">
+        <div class="wrapper">
+          <input type="text" [(ngModel)]="aa" name="input" placeholder="">
+          <label for="input"> Số thứ nhất</label>
+          <br> <br> <br>
+          <input type="text" [(ngModel)]="bb" name="inputt" placeholder="">
+          <label style="margin-top: 90px;" for="inputt"> Số thứ hai</label>
+          <br> <br> <br>
+          <input type="text" [(ngModel)]="cc" name="inputtt" placeholder="">
+          <label style="margin-top: 180px;" for="inputtt"> Số thứ ba</label>
+      </div>
+      </div>
+      <div class="card-footer text-muted">
+        Kết quả: {{ ptb2() }}
+      </div>      
+    </div>
+  </div>
+</div>
+<br><br>
+<hr>
+<h2>Bài 11</h2>
+<div class="row">
+  <div class="col-md-3"></div>
+  <div class="col-md-6">
+    <div class="card">
+      <div class="card-header">
+        Giải <input type="radio" name="equationType" value="linear" [(ngModel)]="selectedEquation"> Phương trình bậc 1
+        <input type="radio" name="equationType" value="quadratic" [(ngModel)]="selectedEquation"> Phương trình bậc 2   
+      </div>
+      <div class="card-body" *ngIf="selectedEquation === 'linear'">
+        <div class="wrapper">
+          <input type="text" [(ngModel)]="t" name="input" placeholder="">
+          <label for="input"> Số thứ nhất</label>
+          <br> <br> <br>
+          <input type="text" [(ngModel)]="k" name="inputt" placeholder="">
+          <label style="margin-top: 90px;" for="inputt"> Số thứ hai</label>
+      </div>
+      <div class="card-footer text-muted">
+        Kết quả: {{ ptb1() }}
+      </div>  
+      </div>     
+    </div>
+  </div>
+</div>
+<div class="row" *ngIf="selectedEquation === 'quadratic'">
+  <div class="col-md-3"></div>
+  <div class="col-md-6">
+    <div class="card">
+      <div class="card-body">
+        <div class="wrapper">
+          <input type="text" [(ngModel)]="aa" name="input" placeholder="">
+          <label style="margin-top: -50px;" for="input"> Số thứ nhất</label>
+          <br> <br> <br>
+          <input type="text" [(ngModel)]="bb" name="inputt" placeholder="">
+          <label style="margin-top: 40px;" for="inputt"> Số thứ hai</label>
+          <br> <br> <br>
+          <input type="text" [(ngModel)]="cc" name="inputtt" placeholder="">
+          <label style="margin-top: 130px;" for="inputtt"> Số thứ ba</label>
+      </div>
+      </div>  
+      <div class="card-footer text-muted">
+        Kết quả: {{ ptb2() }}
+      </div>    
+    </div>
+  </div>
+</div>
+</body>
+</html>
+
+

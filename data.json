@@ -1,0 +1,346 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "productName": "Vòng Tay",
+      "productCode": "GDN-0011",
+      "releaseDate": "March 19, 2016",
+      "description": "Leaf rake with 48-inch wooden handle.",
+      "price": 19.95,
+      "sale": 0,
+      "starRating": 0,
+      "imageUrl": "../assets/images/images9.jpg",
+      "inStock": 5
+    },
+    {
+      "id": "3",
+      "productName": "Quần dày",
+      "productCode": "TBX-0048",
+      "releaseDate": "May 21, 2016",
+      "description": "Curved claw steel hammer",
+      "price": 8.9,
+      "sale": 0,
+      "starRating": 0,
+      "imageUrl": "../assets/images/images15.jpg",
+      "inStock": 5
+    },
+    {
+      "id": "4",
+      "productName": "Dồng hồ ",
+      "productCode": "TBX-0022",
+      "releaseDate": "May 15, 2016",
+      "description": "15-inch steel blade hand saw",
+      "price": 11.55,
+      "starRating": 0,
+      "sale": 0,
+      "imageUrl": "../assets/images/images16.jpg",
+      "inStock": 5
+    },
+    {
+      "id": "5",
+      "productName": "Mắt Kính",
+      "productCode": "GMG-0042",
+      "releaseDate": "October 15, 2015",
+      "description": "Standard two-button video game controller",
+      "price": 35.95,
+      "sale": 0,
+      "starRating": 0,
+      "imageUrl": "../assets/images/images17.jpg",
+      "inStock": 5
+    },
+    {
+      "id": "6",
+      "productName": "Dầu Thơm",
+      "productCode": "G3G-0242",
+      "releaseDate": "October 15, 2015",
+      "description": "Standard two-button video game controller",
+      "price": 35.95,
+      "sale": 0,
+      "starRating": 0,
+      "imageUrl": "../assets/images/images18.jpg",
+      "inStock": 5
+    },
+    {
+      "id": "7",
+      "productName": "Dép Quai Hậu",
+      "productCode": "GDN-0011",
+      "releaseDate": "March 19, 2016",
+      "description": "Leaf rake with 48-inch wooden handle.",
+      "price": 19.95,
+      "sale": 0,
+      "starRating": 0,
+      "imageUrl": "../assets/images/images19.jpg",
+      "inStock": 5
+    },
+    {
+      "id": "8",
+      "productName": "Ao Khoat",
+      "productCode": "GDN-0023",
+      "releaseDate": "March 18, 2016",
+      "description": "15 gallon capacity rolling garden cart",
+      "price": 32.99,
+      "sale": 0,
+      "starRating": 0,
+      "imageUrl": "../assets/images/images4.jpg",
+      "inStock": 5
+    },
+    {
+      "id": "9",
+      "productName": "Bộ đồ nam",
+      "productCode": "GDN-0023",
+      "releaseDate": "March 18, 2016",
+      "description": "15 gallon capacity rolling garden cart",
+      "price": 32.99,
+      "sale": 0,
+      "starRating": 0,
+      "imageUrl": "../assets/images/images5.jpg",
+      "inStock": 5
+    },
+    {
+      "id": "10",
+      "productName": "Áo thun",
+      "productCode": "GDN-0023",
+      "releaseDate": "March 18, 2016",
+      "description": "15 gallon capacity rolling garden cart",
+      "price": 32.99,
+      "sale": 0,
+      "starRating": 0,
+      "imageUrl": "../assets/images/images6.jpg",
+      "inStock": 5
+    },
+    {
+      "id": "11",
+      "productName": "Áo tay dai",
+      "productCode": "GDN-0023",
+      "releaseDate": "March 18, 2016",
+      "description": "15 gallon capacity rolling garden cart",
+      "price": 32.99,
+      "sale": 0,
+      "starRating": 0,
+      "imageUrl": "../assets/images/images7.jpg",
+      "inStock": 5
+    },
+    {
+      "id": "12",
+      "productName": "Giầy cao gót",
+      "productCode": "GDN-0023",
+      "releaseDate": "March 18, 2016",
+      "description": "15 gallon capacity rolling garden cart",
+      "price": 32.99,
+      "sale": 48.54,
+      "starRating": 0,
+      "imageUrl": "../assets/images/images33.jpg",
+      "inStock": 5
+    },
+    {
+      "id": "13",
+      "productName": "Nhẫn Kim Cương",
+      "productCode": "GDN-0023",
+      "releaseDate": "March 18, 2016",
+      "description": "15 gallon capacity rolling garden cart",
+      "price": 32.99,
+      "sale": 50.22,
+      "starRating": 0,
+      "imageUrl": "../assets/images/images37.jpg",
+      "inStock": 5
+    },
+    {
+      "id": "14",
+      "productName": "Nước hóa",
+      "productCode": "GDN-0023",
+      "releaseDate": "March 18, 2016",
+      "description": "15 gallon capacity rolling garden cart",
+      "price": 32.99,
+      "sale": 34,
+      "starRating": 0,
+      "imageUrl": "../assets/images/images12.jpg",
+      "inStock": 5
+    },
+    {
+      "id": "15",
+      "productName": "Vong cổ",
+      "productCode": "GDN-0023",
+      "releaseDate": "March 18, 2016",
+      "description": "15 gallon capacity rolling garden cart",
+      "price": 32.99,
+      "sale": 35.22,
+      "starRating": 0,
+      "imageUrl": "../assets/images/images39.jpg",
+      "inStock": 5
+    },
+    {
+      "id": "16",
+      "productName": "Dây chuyền",
+      "productCode": "GDN-0023",
+      "releaseDate": "March 18, 2016",
+      "description": "15 gallon capacity rolling garden cart",
+      "price": 32.99,
+      "sale": 34.33,
+      "starRating": 0,
+      "imageUrl": "../assets/images/images40.jpg",
+      "inStock": 5
+    },
+    {
+      "id": "17",
+      "productName": "Đồ Bộ",
+      "productCode": "GDN-0023",
+      "releaseDate": "March 18, 2016",
+      "description": "15 gallon capacity rolling garden cart",
+      "price": 32.99,
+      "sale": 40.33,
+      "starRating": 0,
+      "imageUrl": "../assets/images/imageskm1.jpg",
+      "inStock": 5
+    },
+    {
+      "id": "18",
+      "productName": "Đầm trắng",
+      "productCode": "GDN-0023",
+      "releaseDate": "March 18, 2016",
+      "description": "15 gallon capacity rolling garden cart",
+      "price": 32.99,
+      "sale": 48.54,
+      "starRating": 0,
+      "imageUrl": "../assets/images/imageskm2.jpg",
+      "inStock": 5
+    },
+    {
+      "id": "19",
+      "productName": "Váy sang trộng",
+      "productCode": "GDN-0023",
+      "releaseDate": "March 18, 2016",
+      "description": "15 gallon capacity rolling garden cart",
+      "price": 32.99,
+      "sale": 50.22,
+      "starRating": 0,
+      "imageUrl": "../assets/images/imageskm3.jpg",
+      "inStock": 5
+    },
+    {
+      "id": "20",
+      "productName": "Đầm xinh xắn",
+      "productCode": "GDN-0023",
+      "releaseDate": "March 18, 2016",
+      "description": "15 gallon capacity rolling garden cart",
+      "price": 32.99,
+      "sale": 34,
+      "starRating": 0,
+      "imageUrl": "../assets/images/imageskm7.jpg",
+      "inStock": 5
+    },
+    {
+      "id": "21",
+      "productName": "Váy Hồng",
+      "productCode": "GDN-0023",
+      "releaseDate": "March 18, 2016",
+      "description": "15 gallon capacity rolling garden cart",
+      "price": 32.99,
+      "sale": 35.22,
+      "starRating": 0,
+      "imageUrl": "../assets/images/imageskm5.jpg",
+      "inStock": 5
+    },
+    {
+      "id": "22",
+      "productName": "đòng hồ roles",
+      "productCode": "453664",
+      "releaseDate": "2024-02-29",
+      "price": 50,
+      "description": "đồng hồ siêu đẹp",
+      "starRating": null,
+      "imageUrl": "../assets/images/1001.jpg"
+    },
+    {
+      "id": "23",
+      "productName": "aaaa",
+      "productCode": "aaaaaaaaaaa",
+      "releaseDate": "2024-02-29",
+      "price": 33,
+      "description": "33",
+      "starRating": 0,
+      "imageUrl": "../assets/images/4.jpg"
+    },
+    {
+      "id": "24",
+      "productName": "Máy Tinhss",
+      "productCode": "wwww",
+      "releaseDate": "2024-03-16",
+      "price": 14,
+      "description": "máy tính bàn",
+      "starRating": 0,
+      "imageUrl": "../assets/images/danhmuc3.jpg"
+    },
+    {
+      "id": "25",
+      "productName": "aaaa",
+      "productCode": "23rr44",
+      "releaseDate": "2024-03-27",
+      "price": 15,
+      "description": "đseewewe",
+      "starRating": null,
+      "imageUrl": "../assets/images/1005.jpg"
+    },
+    {
+      "id": "26",
+      "productName": "đòng hồ",
+      "productCode": "aaaaaaaaaaa",
+      "releaseDate": "2024-03-22",
+      "price": 10,
+      "description": "gggggg",
+      "starRating": null,
+      "imageUrl": "../assets/images/1001.jpg"
+    },
+    {
+      "id": "27",
+      "productName": "",
+      "productCode": "",
+      "releaseDate": "",
+      "price": 0,
+      "description": "",
+      "starRating": 0,
+      "imageUrl": "../assets/images/1009.jpg"
+    },
+    {
+      "id": 29,
+      "productName": "aaaa",
+      "productCode": "wwww",
+      "releaseDate": "2024-03-07",
+      "price": 12,
+      "description": "aaaaa",
+      "starRating": 0,
+      "imageUrl": "../assets/images/1001.jpg"
+    }
+  ],
+  "user": [
+    {
+      "id": "c180",
+      "email": "dinh@gmail.com",
+      "password": "11111111",
+      "confirmpassword": "11111111"
+    },
+    {
+      "id": "f1a0",
+      "email": "itc.edu@gmail.com",
+      "password": "123456789",
+      "confirmpassword": "123456789"
+    },
+    {
+      "id": "8533",
+      "email": "dinh@gmail.com",
+      "password": "111111111"
+    }
+  ],
+  "admin": [
+    {
+      "id": "142f",
+      "email": "admin@gmail.com",
+      "password": "12121212",
+      "confirmpassword": "12121212"
+    },
+    {
+      "id": "5a0b",
+      "email": "admin@gmail.com",
+      "password": "12121212"
+    }
+  ]
+}
